@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
 
+if [ "$#" -eq 0 ]; then
+  echo "No arguments supplied"
+  exit 1
+fi
 if [[ ! $@ ]]; then
     python3 -m infercode -h
 else
-    python3 -m infercode $@
+    for f in $@; do
+	    python3 -m infercode $f |& tee > $f.embedding
+    done
+fi
+if [ "$#" -eq 2 ]; then
+  diff $1 $2
+  python3 -m infercode --similarity $1 $2
 fi

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
   name = 'infercode',
-  version = "0.0.30",
+  version = "0.0.31",
   py_modules = ['infercode'],
   description = 'Map any code snippet into vector',
   author = 'Nghi D. Q. Bui and Yijun Yu and Lingxiao Jiang',
