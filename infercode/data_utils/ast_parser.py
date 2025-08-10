@@ -18,12 +18,12 @@ class ASTParser():
         cd = os.getcwd()
         plat = platform.system()     
         p = path.join(home, ".tree-sitter")
-        os.chdir(path.join(p, "tree-sitter-parsers-" + plat))
+        os.chdir(path.join(p, "bin"))
         self.Languages = {}
         for file in glob.glob("*.so"):
           try:
             lang = os.path.splitext(file)[0]
-            self.Languages[lang] = Language(path.join(p, "tree-sitter-parsers-" + plat, file), lang)
+            self.Languages[lang] = Language(path.join(p, "bin", file), lang)
           except:
             print("An exception occurred to {}".format(lang))
         os.chdir(cd)
