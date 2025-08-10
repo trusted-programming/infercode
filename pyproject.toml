@@ -1,6 +1,6 @@
 [project]
 name = "infercode"
-version = "0.0.31"
+version = "0.0.32"
 authors = [
  {name = 'Nghi D. Q. Bui', email="bdqnghi@gmail.com"},
  {name = 'Yijun Yu', email="y.yu@open.ac.uk"},
