@@ -20,11 +20,13 @@ pip3 install infercode
 
 Infercode can be tested/used as a command
 ```bash
-infercode <file1>.<ext1> [<file2>.<ext2>...]
+infercode [-s | --similarity] <file1>.<ext1> [<file2>.<ext2>...]
 ```
 where `<file>` is a file name, and `<ext>` is the file extension. The file extension
 will be used to select the programming language for infercode to choose the corresponding
 parser. It will generate a numpy vector for each file in the argument.
+
+If there are two code files, the `--similarity` option instructs the tool to print the cosine similarity between them.
 
 You can also use `infercode` as a python library for more advanced uses:
 
