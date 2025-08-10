@@ -99,8 +99,13 @@ class BaseClient():
             pretrained_model_checkpoint_target = os.path.join(model_checkpoint, "universal_model.zip")
             if not os.path.exists(pretrained_model_checkpoint_target):
                 download_url(self.pretrained_model_url, pretrained_model_checkpoint_target)
+            print("="*50 + pretrained_model_checkpoint_target)
             with zipfile.ZipFile(pretrained_model_checkpoint_target, 'r') as zip_ref:
                 zip_ref.extractall(model_checkpoint)
+                pretrained_model_checkpoint_target = os.path.join(model_checkpoint, "tree-sitter-parsers-infercode", "universal_model.zip")
+            print("*"*50 + pretrained_model_checkpoint_target)
+            with zipfile.ZipFile(pretrained_model_checkpoint_target, 'r') as zip_ref:
+                zip_ref.extractall(home)
 
         self.model_checkpoint = model_checkpoint
         

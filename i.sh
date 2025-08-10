@@ -14,6 +14,3 @@ for f in tree-sitter-asm-0.0.1 tree-sitter-c-0.19.0 tree-sitter-cpp-0.19.0 tree-
 done
 pip install tree-sitter-parsers
 python test.py
-cd ~/.tree-sitter
-unzip Linux.zip
-cd -
