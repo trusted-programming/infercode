@@ -12,19 +12,21 @@ install_requires=[
     "sentencepiece>=0.1.95",
     "tensorflow>=2.4.0",
     "tqdm>=4.55.1",
-    "tree_sitter_parsers>=0.0.3",
+    "tree_sitter==0.19.0",
+    "tree_sitter_parsers>=0.0.7",
+    "typing_extensions>=4.14.1",
     "utils>=1.0.1"
 ]
 
 setup(
   name = 'infercode',
-  version = "0.0.29",
+  version = "0.0.30",
   py_modules = ['infercode'],
   description = 'Map any code snippet into vector',
-  author = 'Nghi D. Q. Bui and Yijun Yu',
+  author = 'Nghi D. Q. Bui and Yijun Yu and Lingxiao Jiang',
   author_email = 'bdqnghi@gmail.com',
   license="MIT",
-  url = 'https://github.com/bdqnghi/infercode/',
+  url = 'https://github.com/trusted-programming/infercode/',
   classifiers = [
     'Development Status :: 3 - Alpha',
     'License :: OSI Approved :: MIT License',
