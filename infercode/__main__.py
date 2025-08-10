@@ -78,7 +78,7 @@ def similarity(file1, file2):
     return cosine_similarity
 
 def main(): 
-    parser = argparse.ArgumentParser(usage='infercode [-s | --similarity] codes')
+    parser = argparse.ArgumentParser(usage='infercode [-s | --similarity] code')
     parser.add_argument('-s', "--similarity", action="store_true", help="show similarity")
     parser.add_argument('files', metavar='code', nargs='+', help='a file for the conversion')
     args = parser.parse_args()
