@@ -15,7 +15,11 @@ Install the Pypi package (current version is 0.0.34):
 ```python
 pip3 install infercode
 ```
-    
+<p align="center">
+    <br>
+    <img src="demo.gif" width="600"/>
+    <br>
+<p>    
 ## Usage
 
 Infercode can be tested/used as a command
