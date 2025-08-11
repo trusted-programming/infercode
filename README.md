@@ -17,7 +17,7 @@ pip3 install infercode
 ```
 <p align="center">
     <br>
-    <img src="demo.gif" width="600"/>
+    <img src="demo.svg" width="800"/>
     <br>
 <p>    
 ## Usage
