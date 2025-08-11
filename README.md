@@ -15,11 +15,7 @@ Install the Pypi package (current version is 0.0.34):
 ```python
 pip3 install infercode
 ```
-<p align="center">
-    <br>
-    <img src="demo.svg" width="800"/>
-    <br>
-<p>    
+<p align="center"> <object data="demo.svg" width="80%"></object> <p>    
 ## Usage
 
 Infercode can be tested/used as a command
