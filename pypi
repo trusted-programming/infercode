@@ -1,5 +1,6 @@
 rm -rf dist/*
-python3 setup.py sdist bdist_wheel
+pip install build
+python3 -m build
 if [ "$1" == "main" ]; then
 twine upload dist/infercode-*
 pip3 uninstall infercode -y
