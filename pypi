@@ -1,5 +1,5 @@
 rm -rf dist/*
-pip install build
+pip3 install build twine
 python3 -m build
 if [ "$1" == "main" ]; then
 twine upload dist/infercode-*
