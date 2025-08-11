@@ -75,6 +75,22 @@ Then we have the output embeddings:
 
 Note that on the initial step, the script will build tree-sitter parsers from sources into ```~/.tree-sitter/bin```, download our pretrained model, and store it into ```~/.infercode_data/model_checkpoint```.
     
+## Development
+
+Use `python -m build` to create the wheel and use `twine upload` to upload them to the PyPI repository.
+
+```bash
+./pypi [main]
+```
+where `main` would require the deployment to the main PyPI repository.
+
+### Machine without AVX instructions
+
+On older machines where AVX instructions are missing, one could only recompile Tensorflow with noamx options:
+```bash
+./build_tensorflow.sh
+```
+
 ## Compare to other work
 - There are a few other techniques for code representation learning, but none of them are designed with the intention to have a pretrained model to convert code to vector. For example, [Code2vec](https://arxiv.org/abs/1803.09473) (Alon et al.), despite the attractive name, Code2vec is not suitable to convert code to vector since they trained the model to predict the method name. If one wants to reuse the Code2vec model to convert code to vector, their implementation is not ready for this purpose. 
     
